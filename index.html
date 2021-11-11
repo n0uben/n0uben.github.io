@@ -10,28 +10,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,500;1,300&family=Space+Grotesk:wght@700&display=swap"      rel="stylesheet"> 
-    <title>Mon super Projet web</title>
+    <title>Benjamin Noureux - Développeur and cat lover #RechercheAlternance2022</title>
 </head>
 <body>
+    <noscript>
+        <p>Attention, Javascript ne fonctionne pas sur votre navigateur, veuillez tenter de le mettre à jour ou essayez avec un autre navigateur.</p>
+    </noscript>
     <div class="header">
-        <img src="./images/logo-benjamin-noureux.png" alt="logo benjamin noureux">
-        <nav class="menu-header">
-            <ul>
-                <li class="menu-header-item"><a href="#formation">Accueil</a></li>
-                <li class="menu-header-item"><a href="#formation">Formation</a></li>
-                <li class="menu-header-item"><a href="#experiences">Expériences</a></li>
-                <li class="menu-header-item"><a href="#competences">Compétences</a></li>
-                <li class="menu-header-item"><a href="#realisations">Réalisations</a></li>
-                <li class="menu-header-item"><a href="#centres-interet">Centres d'intéret</a></li>
-            </ul>
-        </nav>
+        <figure id="header-logo-container">
+            <img id="header-logo" src="./images/logo-benjamin-noureux-min.png" alt="logo benjamin noureux">
+        </figure>
+        
+        <button id="menu-mobile-button"><span class="menu-icone"></span> MENU</button>
+        
     </div>
-
+    <nav id="header-menu-nav">
+        <ul id="header-menu" class="menu">
+            <li class="menu-item"><a href="#home">Accueil</a></li>
+            <li class="menu-item"><a href="#formation">Formation</a></li>
+            <li class="menu-item"><a href="#experiences">Expériences</a></li>
+            <li class="menu-item"><a href="#competences">Compétences</a></li>
+            <li class="menu-item"><a href="#realisations">Réalisations</a></li>
+            <li class="menu-item"><a href="#centres-interet">Centres d'intéret</a></li>
+        </ul>
+    </nav>
+    
     <main>
         <header class="section" id="home">
             <div class="row">
                 <div class="col">
-                    <h1 class="page-title">Benjamin Noureux, developper and cat lover</h1>
+                    <h1 class="page-title">Benjamin Noureux, Développeur et cat lover</h1>
                     <p class="page-subtitle">
                         Lorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit ametLorem ipsum dolor sit amet.
                     </p>
@@ -39,21 +47,23 @@
             </div>
             <div class="row">
                 <div class="col col3">
-                    <a href="mailto:bonjour@nouben.fr" rel="noopener noreferrer">Email</a>
+                    <a href="mailto:bonjour@nouben.fr" class="button button-primary" rel="noopener noreferrer">Email</a>
                 </div>
                 <div class="col col3">
-                    <a href="https://github.com/n0uben/" target="_blank" rel="noopener noreferrer">Github</a>
+                    <a href="https://github.com/n0uben/" class="button button-primary" target="_blank" rel="noopener noreferrer">Github</a>
                 </div>
                 <div class="col col3">
-                    <a href="https://www.linkedin.com/in/benjamin-noureux-73271536/" target="_blank" rel="noopener noreferrer">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/benjamin-noureux-73271536/" class="button button-primary" target="_blank" rel="noopener noreferrer">Linkedin</a>
                 </div>
             </div>
         </header>
-    
+        
         <div class="section" id="formation">
             <div class="row">
                 <div class="col">
+
                     <h2>Formation</h2>
+                    
                     <table>
                         <thead>
                             <tr>
@@ -93,12 +103,12 @@
                 </div>
             </div>
         </div>
-    
+        
         <div class="section" id="experiences">
             <div class="row">
                 <div class="col">
                     <h2>Expériences</h2>
-    
+                    
                 </div>
             </div>
             <div class="row">
@@ -116,16 +126,12 @@
                         Mené la création de nombreux sites Wordpress vitrines et e-commerce en sous-traitance ou en direct avec clients variés (agences, restauration, tourisme, institutionnels, culture…) Gestion de projet : Cadrage besoins, estimations, planification & suivi projet avec clients
                     </p>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col">
                     <h3>Webmarketing & Intégrateur, OD&B - 2013/2015 - Limoges</h3>
                     <p>
                         Développement de notoriété web (community management, newsletter, stratégie de contenu, création de sites wordpress responsive) & reportings Analytics
                     </p>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col">
                     <h3>Expériences précédentes</h3>
                     <p>
@@ -146,19 +152,19 @@
                 <div class="col">
                     <h3>Langages</h3>
                     <p>
-                    python, java, php, javascript<br>
-                    BDD : MariaDB, MySQL
+                        python, java, php, javascript<br>
+                        BDD : MariaDB, MySQL
                     </p>
-    
+                    
                     <h3>Web</h3>
                     <p>HTML5/CSS3, Flexbox/Grid, Scss</p>
-    
+                    
                     <h3>Suite Adobe</h3>
                     <p>Illustrator, Indesign & Adobe XD </p>
-    
+                    
                     <h3>Gestion de projet</h3>
                     <p>GIT, Github, Trello, Asana</p>
-    
+                    
                     <h3>Compétences Personnelles :</h3>
                     <p>
                         Créatif, Curieux, Autonome, Bonne capacité d’adaptation,<br>
@@ -167,7 +173,7 @@
                 </div>
             </div>
         </div>
-    
+        
         <div class="section" id="realisations">
             <div class="row">
                 <div class="col">
@@ -194,25 +200,26 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
                     </article>
                 </div>
-                <div class="row">
-                    <div class="col col3">
-                        <article>
-                            <h3>Réalisation 4</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
-                        </article>
-                    </div>
-                    <div class="col col3">
-                        <article>
-                            <h3>Réalisation 5</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
-                        </article>
-                    </div>
-                    <div class="col col3">
-                        <article>
-                            <h3>Réalisation 6</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
-                        </article>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col col3">
+                    <article>
+                        <h3>Réalisation 4</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
+                    </article>
+                </div>
+                <div class="col col3">
+                    <article>
+                        <h3>Réalisation 5</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
+                    </article>
+                </div>
+                <div class="col col3">
+                    <article>
+                        <h3>Réalisation 6</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tempore nemo totam non dicta laudantium quibusdam cum! Quaerat, aspernatur, iusto placeat, maxime architecto eaque aliquam adipisci ea nam fugiat error!</p>
+                    </article>
+                </div>
             </div>
         </div>
         <div class="section" id="centres-interet">
@@ -244,10 +251,11 @@
             </div>
         </div>
     </main>
-
+    
     <footer>
-        Tous droits réservés 2021 - Benjamin Noureux
+        <p>Tous droits réservés 2021 - Benjamin Noureux</p>
     </footer>
-
+    
+    <script src="ajouter-une-classe-css-pour-le-menu-mobile.js"></script>
 </body>
 </html>

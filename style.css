@@ -1,94 +1,197 @@
 :root {
-    --black: #141414;
-    --white: #FCFCFC;
-    --accent-color: #192BC2;
+    --text-primary: #141414;
+    --text-secondary: #FCFCFC;
+    
+    --accent-color: #384ae5;
+    --accent-color-dark: #2639E3;
+    --accent-color-secondary: #35FF69;
+
+    --background-primary:#fff;
+    --background-secondary: #141414;
 
     --fonts-title: 'Space Grotesk', sans-serif;
     --fonts-text: 'IBM Plex Sans', sans-serif;
 
-    --header-height: 90px;
+    --header-height: 80px;
+    --dropdown-shadow: rgb(56, 74, 229, 0.8);
+}
+::selection {
+    background: var(--accent-color);
+    color: var(--text-secondary);
 }
 
 /*general*/
 body {
     margin: 0;
     padding: 0;
-    background: var(--black);
+    background: var(--background-primary);
+    color: var(--text-primary);
+    font-size: 18px;
 }
 
 /*Typography*/
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fonts-title);
     color: var(--accent-color);
 }
 
-a, p, input {
+/*titles*/
+h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+h2 {
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+}
+h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+h4 {
+    font-size: 1.75rem;
+    line-height: 2.1rem;
+}
+h5 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+h6 {
+    font-size: 1.25rem;
+    line-height: 1.3rem;
+}
+
+/*content text*/
+a, p, input, th, td, button{
     font-family: var(--fonts-text);
-    color: var(--black);
+    color: var(--text-primary);
 }
 a {
-    color: var(--black);
     transition: all 300ms ease-in-out;
     text-decoration: none;
 }
 a:hover {
     color: var(--accent-color);
 }
-/*header*/
 
+/*buttons*/
+
+/*reset default styles of buttons tags*/
+button {
+    background: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.button {
+    background: var(--accent-color);
+    color: var(--text-secondary);
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+/* header with logo and nav*/
 .header {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
-    justify-content: space-between;
-    background: var(--white);
+    height: var(--header-height);
     position: fixed;
     top: 0;
+    left:0;
+    right:0;
+    /* background: var(--background-primary); */
+    background: white;
+    box-shadow: 0 5px 2px var(--dropdown-shadow);
+    z-index: 1;
 }
+#header-logo-container {
+    max-width: 50%;
+}
+#header-logo {
+    max-width: 100%;
+}
+/*nav menus */
 
-.header img {
-    display: inline-block;
-    max-width: 300px;
-}
-.header nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.header nav ul {
-    display: flex;
-    flex-wrap: wrap;
+.menu {
+    background: white;
     margin: 0;
+    padding: 15px;
 }
-.header nav ul li {
+.menu-icone {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background: url('./images/menu-32px.png') no-repeat;
+}
+.menu-item {
+    background: white;
     list-style-type: none;
-    margin-right: 20px;
+    margin: 10px 0;
+    max-width: 100%;
+}
+/*bouton menu*/
+#header button {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#menu-mobile-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-
-/*main*/
-#home {
-    margin-top: var(--nav-height);
+#header-menu-nav {
+    z-index: 2;
 }
+#header-menu-nav {
+    margin-top: -250px;
+    transition: all 300ms ease-in-out;
+}
+#header-menu-nav.visible {
+    margin-top: var(--header-height);
+    box-shadow: 0 5px 2px var(--accent-color-dark);
+}
+
+/* General structure*/
 
 .section, header {
-    background: var(--white);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: var(--background-primary);
     padding: 20px 0;
     margin: 20px 0;
 }
 .section {
-    background: blue;
-    max-width: 1200px;
-    margin: auto;
+    background: var(--background-primary);
+    /* background: blue; */
+    margin: 20px auto;
     padding: 20px 0;
 }
 .row {
-    background: green;
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--background-primary);
+    /* background: green; */
     margin: 20px 0;
     padding: 20px 0;
 }
 .col {
-    background: red;
-    padding: 20px;
+    background: var(--background-primary);
+    /* background: red; */
+    padding: 20px 10px;
+}
+
+/*Specific structure*/
+
+
+/*home section*/
+#home {
+    /* margin-top: var(--header-height); */
+    padding: 50px 0;
 }
