@@ -19,11 +19,13 @@ boutonMobile.addEventListener('click', function() {
     // le clic supprime la classe
     if (longueur == 1) {
         menuMobile.classList.remove("visible");
+        boutonMobile.innerHTML = '<span class="menu-icone"></span> MENU';
     }
     //s'il n’y a pas de classe, le menu est invisible
     //le clic ajoute la classe 
     else if (longueur == 0) {
         menuMobile.classList.add("visible");
+        boutonMobile.innerHTML = '<span class="menu-icone menu-close"></span>FERMER';
     }
     
 });

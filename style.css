@@ -1,3 +1,15 @@
+/*********/
+/* NOTES */
+/*********/
+
+/*Cette feuille de style 
+- utilise les variables css (taux de compatibilité : 96% selon caniuse.com)
+- est structurée comme un genre de bootsrap maison (section / lignes / colonnes)
+car je trouve ce découpage pratique
+- 
+
+*/
+
 :root {
     --text-primary: #141414;
     --text-secondary: #FCFCFC;
@@ -73,6 +85,7 @@ a {
     text-decoration: none;
 }
 a:hover {
+    background: var(--background-primary);
     color: var(--accent-color);
 }
 
@@ -105,7 +118,7 @@ button {
     /* background: var(--background-primary); */
     background: white;
     box-shadow: 0 5px 2px var(--dropdown-shadow);
-    z-index: 1;
+    z-index: 2;
 }
 #header-logo-container {
     max-width: 50%;
@@ -120,12 +133,7 @@ button {
     margin: 0;
     padding: 15px;
 }
-.menu-icone {
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    background: url('./images/menu-32px.png') no-repeat;
-}
+
 .menu-item {
     background: white;
     list-style-type: none;
@@ -133,31 +141,47 @@ button {
     max-width: 100%;
 }
 /*bouton menu*/
-#header button {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 #menu-mobile-button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-
-#header-menu-nav {
-    z-index: 2;
+#menu-mobile-button:hover {
+    cursor: pointer;
+}
+.menu-icone {
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+    background: url('./images/menu-32px.png') no-repeat;
+    margin-bottom: 5px;
+}
+.menu-close {
+    height:26px;
+    width: 26px;
+    background: url('./images/close.png') no-repeat;
+    background-size: contain;
 }
 #header-menu-nav {
-    margin-top: -250px;
+    z-index: 1;
+}
+#header-menu-nav {
+    position: fixed;
+    width: 100%;
+    top: -250px;
     transition: all 300ms ease-in-out;
 }
 #header-menu-nav.visible {
-    margin-top: var(--header-height);
+    top: var(--header-height);
     box-shadow: 0 5px 2px var(--accent-color-dark);
 }
 
 /* General structure*/
+main {
+    scroll-behavior: smooth;
+}
 
 .section, header {
     display: flex;
