@@ -33,8 +33,9 @@ car je trouve ce découpage pratique
     background: var(--accent-color);
     color: var(--text-secondary);
 }
-
+/********************************/
 /*general*/
+/********************************/
 body {
     margin: 0;
     padding: 0;
@@ -43,26 +44,31 @@ body {
     font-size: 18px;
 }
 
+/********************************/
 /*Typography*/
-
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--fonts-title);
-    color: var(--accent-color);
-}
+/********************************/
 
 /*titles*/
+
+h1, h2, h3, h4, h5, h6 {
+font-family: var(--fonts-title);
+color: var(--accent-color);
+}
+
 h1 {
     font-size: 3rem;
     line-height: 3.5rem;
+    margin-block-start: 0;
 }
 h2 {
     font-size: 2.5rem;
     line-height: 2.9rem;
+    margin-block-start: 0;
 }
 h3 {
     font-size: 1.5rem;
     line-height: 2rem;
+    margin-block-start: 0;
 }
 h4 {
     font-size: 1.35rem;
@@ -93,7 +99,13 @@ a:hover {
     color: var(--text-primary);
 }
 
+td, th {
+    vertical-align: baseline;
+}
+
+/********************************/
 /*buttons*/
+/********************************/
 
 /*reset default styles of buttons tags*/
 button {
@@ -181,8 +193,9 @@ button {
     top: var(--header-height);
     box-shadow: 0 5px 2px var(--accent-color-dark);
 }
-
+/********************************/
 /* General structure*/
+/********************************/
 main {
     scroll-behavior: smooth;
 }
@@ -222,13 +235,19 @@ img {
 /*card design (article tags)*/
 .card {
     background: var(--background-primary);
-    box-shadow: 5px 5px 2px var(--dropdown-shadow);
+    border: solid 4px var(--accent-color);
+    border-radius: 20px;
+    max-width: 100%;
 }
 .card-content {
     padding: 10px;
 }
 
+
+/********************************/
 /*Specific Structures and design*/
+/********************************/
+
 
 /*alternate sections backgrounds*/
 #home, #experiences, #realisations {
@@ -241,8 +260,7 @@ img {
 /*home section*/
 
 #home {
-    /* margin-top: var(--header-height); */
-    padding: 50px 0;
+    padding: 150px 0 50px 0;
 }
 
 /*experiences section*/
