@@ -3,11 +3,11 @@
 /*********/
 
 /*
-Cette feuille de style 
-- utilise les variables css (taux de compatibilité : 96% des users selon caniuse.com)
-- est structurée avec le html comme un genre de bootstrap maison (section / lignes / colonnes)
-car je trouve ce découpage pratique
-- utilise des noms en anglais car j’ai l’habitude comme ça (la faute de bootstrap principalement ^^)
+Cette feuille de style utilise :
+- les variables css (96% des users selon caniuse.com)
+- css grid (98% des users selon caniuse.com)
+- une structure comme un genre de bootstrap artisanal (modele section / lignes / colonnes)
+- des noms en anglais car j’en ai l'habitude (la faute de bootstrap principalement ^^)
 */
 
 :root {
@@ -28,19 +28,20 @@ car je trouve ce découpage pratique
 
     --header-height: 80px;
     --dropdown-shadow: rgb(56, 74, 229, 0.8);
-    --dropdown-shadow: rgb(56, 74, 229, 0.8);
+    --dropdown-shadow-black: rgb(0, 0, 0, 0.5);
 }
 ::selection {
     background: var(--accent-color);
     color: var(--text-secondary);
 }
 /********************************/
-/*general*/
+/*general
 /********************************/
 body {
     margin: 0;
     padding: 0;
     background: var(--background-primary);
+    font-family: var(--fonts-text);
     color: var(--text-primary);
     font-size: 18px;
 }
@@ -86,7 +87,6 @@ h6 {
 
 /*content text*/
 a, p, input, th, td, button{
-    font-family: var(--fonts-text);
     color: var(--text-primary);
     font-weight: 400;
     line-height: 1.5rem;
@@ -201,12 +201,12 @@ main {
     scroll-behavior: smooth;
 }
 
-.section, header {
+.section, header, footer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
-.section {
+.section, footer{
     /* background: blue; */
     margin: 0 auto;
     padding: 50px 0;
@@ -235,16 +235,21 @@ img {
 
 /*card design (article tags)*/
 .card {
-    background: var(--background-primary);
-    border-radius: 0 40px 40px 40px;
+    /* border-radius: 0 40px 40px 40px; */
     max-width: 100%;
+    box-shadow: 0px 5px 15px 2px var(--dropdown-shadow-black);
 }
-.card:hover {
-    /* box-shadow: 00 0 8px 1px var(--background-secondary-light); */
+.card-header img {
+    display: block;
+    margin: 0 auto;
 }
 .card-content {
-    border: solid 4px var(--accent-color);
-    padding: 20px 10px 0px 10px;
+    /* border: solid 4px var(--accent-color); */
+    background: var(--accent-color);
+    padding: 40px 20px 10px 20px;
+}
+.card-content h3, .card-content p {
+    color: var(--text-secondary) !important;
 }
 
 
@@ -269,9 +274,12 @@ img {
 
 /*experiences section*/
 
+#experiences .card-header {
+    padding: 30px;
+}
+
 #experiences .card-header img {
-    margin: 10px 0 0 10px;
-    max-width: 150px;
+    max-width: 200px;
 }
 
 #tatagermaine .card-header img {
@@ -280,4 +288,21 @@ img {
 }
 #competences h3 {
     margin-block-end: 0;
+}
+
+/*realisations & centres-interet section*/
+#realisations .card-header, #centres-interet .card-header {
+    display: grid;
+}
+#realisations .card-header img, #centres-interet .card-header img{
+    object-fit: cover;
+}
+
+/*footer*/
+
+footer {
+    padding-bottom: 0;
+}
+footer p {
+    margin: 5px 0;
 }
