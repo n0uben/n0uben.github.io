@@ -2,29 +2,31 @@
 /* NOTES */
 /*********/
 
-/*Cette feuille de style 
-- utilise les variables css (taux de compatibilité : 96% selon caniuse.com)
-- est structurée comme un genre de bootsrap maison (section / lignes / colonnes)
+/*
+Cette feuille de style 
+- utilise les variables css (taux de compatibilité : 96% des users selon caniuse.com)
+- est structurée avec le html comme un genre de bootstrap maison (section / lignes / colonnes)
 car je trouve ce découpage pratique
-- 
-
+- utilise des noms en anglais car j’ai l’habitude comme ça (la faute de bootstrap principalement ^^)
 */
 
 :root {
     --text-primary: #141414;
     --text-secondary: #FCFCFC;
     
-    --accent-color: #384ae5;
-    --accent-color-dark: #2639E3;
+    --accent-color: #2639E3;
+    --accent-color-dark: #384ae5;
     --accent-color-secondary: #35FF69;
 
     --background-primary:#fff;
     --background-secondary: #141414;
+    --background-secondary-light: rgba(20, 20, 20, 0.1);
 
     --fonts-title: 'Space Grotesk', sans-serif;
     --fonts-text: 'IBM Plex Sans', sans-serif;
 
     --header-height: 80px;
+    --dropdown-shadow: rgb(56, 74, 229, 0.8);
     --dropdown-shadow: rgb(56, 74, 229, 0.8);
 }
 ::selection {
@@ -59,34 +61,36 @@ h2 {
     line-height: 2.9rem;
 }
 h3 {
-    font-size: 2rem;
-    line-height: 2.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 h4 {
-    font-size: 1.75rem;
-    line-height: 2.1rem;
+    font-size: 1.35rem;
+    line-height: 1.75rem;
 }
 h5 {
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+    font-size: 1.25rem;
+    line-height: 1.55rem;
 }
 h6 {
-    font-size: 1.25rem;
-    line-height: 1.3rem;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
 }
 
 /*content text*/
 a, p, input, th, td, button{
     font-family: var(--fonts-text);
     color: var(--text-primary);
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 a {
     transition: all 300ms ease-in-out;
     text-decoration: none;
+    color: var(--accent-color);
 }
 a:hover {
-    background: var(--background-primary);
-    color: var(--accent-color);
+    color: var(--text-primary);
 }
 
 /*buttons*/
@@ -187,35 +191,67 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background: var(--background-primary);
-    padding: 20px 0;
-    margin: 20px 0;
 }
 .section {
-    background: var(--background-primary);
     /* background: blue; */
-    margin: 20px auto;
-    padding: 20px 0;
+    margin: 0 auto;
+    padding: 50px 0;
 }
 .row {
     display: flex;
     flex-wrap: wrap;
-    background: var(--background-primary);
+    align-content: space-between;
+    /* background: var(--background-primary); */
     /* background: green; */
-    margin: 20px 0;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px 0;
 }
 .col {
-    background: var(--background-primary);
+    /* background: var(--background-primary); */
     /* background: red; */
-    padding: 20px 10px;
+    padding: 20px 5px;
 }
 
-/*Specific structure*/
+/*fix static width of images*/
+img {
+    display: inline-block;
+    max-width: 100%;
+}
 
+/*card design (article tags)*/
+.card {
+    background: var(--background-primary);
+    box-shadow: 5px 5px 2px var(--dropdown-shadow);
+}
+.card-content {
+    padding: 10px;
+}
+
+/*Specific Structures and design*/
+
+/*alternate sections backgrounds*/
+#home, #experiences, #realisations {
+    background: var(--background-primary);
+}
+#formation, #competences, #centres-interet {
+    background: var(--background-secondary-light);
+}
 
 /*home section*/
+
 #home {
     /* margin-top: var(--header-height); */
     padding: 50px 0;
+}
+
+/*experiences section*/
+
+#experiences .card-header img {
+    max-width: 150px;
+}
+
+#tatagermaine .card-header img {
+    background: #354358;
+    padding: 10px;
 }
