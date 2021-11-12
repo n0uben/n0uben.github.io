@@ -197,9 +197,6 @@ button {
 /********************************/
 /* General structure*/
 /********************************/
-main {
-    scroll-behavior: smooth;
-}
 
 .section, header, footer {
     display: flex;
