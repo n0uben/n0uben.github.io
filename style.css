@@ -188,7 +188,7 @@ button {
     position: fixed;
     width: 100%;
     top: -250px;
-    transition: all 300ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 #header-menu-nav.visible {
     top: var(--header-height);
