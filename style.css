@@ -10,6 +10,27 @@ Cette feuille de style utilise :
 - des noms en anglais car j’en ai l'habitude (la faute de bootstrap principalement ^^)
 */
 
+@font-face {
+    font-family: 'IBM Plex sans';
+    src: url(./fonts/IBMPlexSans-Light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'IBM Plex sans';
+    src: url(./fonts/IBMPlexSans-Bold.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'IBM Plex sans';
+    src: url(./fonts/IBMPlexSans-LightItalic.ttf);
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url(./fonts/SpaceGrotesk-Bold.ttf);
+    font-weight: 700;
+}
+
 :root {
     --text-primary: #1f1f1f;
     --text-secondary: #FCFCFC;
@@ -24,7 +45,7 @@ Cette feuille de style utilise :
     --background-secondary-ultralight: rgba(31, 31, 31, 0.2);
 
     --fonts-title: 'Space Grotesk', sans-serif;
-    --fonts-text: 'IBM Plex Sans', sans-serif;
+    --fonts-text: 'IBM Plex sans', sans-serif;
 
     --header-height: 80px;
     --dropdown-shadow: rgb(56, 74, 229, 0.8);
@@ -375,10 +396,16 @@ footer p {
 
 @media screen and (min-width: 768px) {
     .row {
-        justify-content: space-around;
+        justify-content: space-around;        
     }
     .col2 {
         max-width: 45%;
+    }
+    #home .row {
+        justify-content: baseline;
+    }
+    #experiences .row {
+        align-items: baseline;
     }
 
     /*cards*/
