@@ -122,7 +122,10 @@ button {
     border-radius: 15px;
 }
 
+/******************************/
 /* header with logo and nav*/
+/******************************/
+
 .header {
     display: flex;
     justify-content: space-around;
@@ -172,13 +175,13 @@ button {
     display: inline-block;
     height: 32px;
     width: 32px;
-    background: url('./images/menu-32px.png') no-repeat;
+    background: url('./images/icones/menu-32px.png') no-repeat;
     margin-bottom: 5px;
 }
 .menu-close {
     height:26px;
     width: 26px;
-    background: url('./images/close.png') no-repeat;
+    background: url('./images/icones/close.png') no-repeat;
     background-size: contain;
 }
 #header-menu-nav {
@@ -283,6 +286,24 @@ img {
 #header-buttons-row {
     padding-top: 0;
     margin-top: 0;
+}
+#home .button {
+    display: flex;
+}
+.button-icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 7px;
+}   
+#icon-email {
+    background: url(./images/icones/email.png) no-repeat;
+}
+#icon-github {
+    background: url(./images/icones/github.png) no-repeat;
+}
+#icon-linkedin {
+    background: url(./images/icones/linkedin-logo.png) no-repeat;
 }
 
 /*experiences section*/
