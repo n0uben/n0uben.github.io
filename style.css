@@ -369,3 +369,31 @@ footer p {
 }
 
 
+/**********************/
+/* mediaqueries */
+/**********************/
+
+@media screen and (min-width: 768px) {
+    .row {
+        justify-content: space-around;
+    }
+    .col2 {
+        max-width: 45%;
+    }
+
+    /*cards*/
+
+    #experiences .card-header img {
+        max-width: 140px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    .col3 {
+        max-width: 30%;
+    }
+
+    .col4 {
+        max-width: 20%;
+    }
+}
