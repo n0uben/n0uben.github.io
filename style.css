@@ -306,6 +306,13 @@ img {
     background: url(./images/icones/linkedin-logo.png) no-repeat;
 }
 
+/*formation section*/
+
+#formation table {
+    width :100%;
+    border-collapse: collapse;
+}
+
 /*experiences section*/
 
 #experiences .card-header {
