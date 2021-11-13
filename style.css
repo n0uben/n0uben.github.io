@@ -245,8 +245,11 @@ img {
     background: var(--accent-color);
     padding: 40px 20px 10px 20px;
 }
-.card-content h3, .card-content p {
+.card-content h3, .card-content p, .card-content a {
     color: var(--text-secondary) !important;
+}
+.card-content a {
+    text-decoration: underline;
 }
 
 
