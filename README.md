@@ -2,4 +2,4 @@
 
 Projet web statique, DUT informatique
 
-Demo:https://n0uben.github.io/projet-web/
+Demo: https://n0uben.github.io/projet-web/
