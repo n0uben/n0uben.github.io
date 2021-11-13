@@ -31,8 +31,8 @@ Cette feuille de style utilise :
     --dropdown-shadow-black: rgb(0, 0, 0, 0.5);
 }
 ::selection {
-    background: var(--accent-color);
-    color: var(--text-secondary);
+    background: var(--accent-color-secondary);
+    color: var(--accent-color);
 }
 /********************************/
 /*general
@@ -100,9 +100,6 @@ a:hover {
     color: var(--text-primary);
 }
 
-td, th {
-    vertical-align: baseline;
-}
 
 /********************************/
 /*buttons*/
@@ -233,6 +230,27 @@ img {
     max-width: 100%;
 }
 
+/* tables design */
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width :100%;
+    border-collapse: collapse;
+}
+table tbody {
+    border-top: solid 2px var(--background-secondary);
+}
+td, th {
+    vertical-align: top;
+    padding: 0.5rem 0.5rem;
+}
+th {
+    font-weight: 600;
+}
+
 /*card design (article tags)*/
 .card {
     /* border-radius: 0 40px 40px 40px; */
@@ -308,10 +326,6 @@ img {
 
 /*formation section*/
 
-#formation table {
-    width :100%;
-    border-collapse: collapse;
-}
 
 /*experiences section*/
 
@@ -353,3 +367,5 @@ footer p {
     font-size: 2rem;
     line-height: 2.3rem;
 }
+
+
