@@ -319,3 +319,9 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+/*Mentions légales*/
+#page-mentions h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+}
