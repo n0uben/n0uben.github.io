@@ -1,3 +1,5 @@
- # Mon Super projet web
+# Portfolio / Cv
 
- Repo avec mon super projet web statique dedans
+Projet web statique, DUT informatique
+
+Demo: https://n0uben.github.io/projet-web/
