@@ -8,7 +8,7 @@ Cette feuille de style utilise :
 - css grid (98% des users selon caniuse.com)
 - une structure comme un genre de bootstrap artisanal (modele section / lignes / colonnes)
 - des noms en anglais car j’en ai l'habitude (la faute de bootstrap principalement ^^)
-- des polices au format woff2 pour une meilleure compression (-300ms de chargement)
+- des polices au format woff2 pour une meilleure compression
 */
 
 
@@ -35,14 +35,13 @@ Cette feuille de style utilise :
 
 :root {
     --text-primary: #1f1f1f;
-    --text-secondary: #FCFCFC;
+    --text-secondary: #fff;
     
     --accent-color: #2639E3;
-    --accent-color-dark: #384ae5;
     --accent-color-secondary: #35FF69;
 
     --background-primary:#fff;
-    --background-secondary: #1f1f1f;
+    --background-secondary: rgb(31, 31, 31);
     --background-secondary-light: rgba(31, 31, 31, 0.6);
     --background-secondary-ultralight: rgba(31, 31, 31, 0.2);
 

@@ -9,6 +9,11 @@ let boutonMenuMobile = toggleMenu[0];
 //on récupère le menu en lui meme
 let menuMobile = document.getElementById('header-menu-nav');
 
+function get_viewport_width() {
+    let viewport_width = window.innerWidth;
+    return viewport_width;
+}
+
 // on ajouter un ecouteur d’évenement sur le bouton mobile & les liens du menu
 for (let i = 0; i < toggleMenu.length; i++) {
     
@@ -26,7 +31,7 @@ for (let i = 0; i < toggleMenu.length; i++) {
         }
         //s'il n’y a pas de classe, le menu est invisible
         //le clic ajoute la classe 
-        else {
+        else if (!is_visible && get_viewport_width() < 992) {
             menuMobile.classList.add("visible");
             boutonMenuMobile.innerHTML = '<span class="menu-icone menu-close"></span>FERMER';
         }
