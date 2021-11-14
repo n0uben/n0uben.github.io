@@ -275,6 +275,7 @@ table tbody {
 td, th {
     vertical-align: top;
     padding: 0.5rem 0.5rem;
+    text-align: left;
 }
 th {
     font-weight: 600;
