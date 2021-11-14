@@ -413,7 +413,7 @@ footer p {
         justify-content: space-between;        
     }
     .col2 {
-        width: 45%;
+        max-width: 45%;
     }
 
     /* specifique */
@@ -422,7 +422,7 @@ footer p {
     }
     /*col with page title and subtitle*/
     #home .row:first-child .col {
-        width : 75%;
+        max-width : 75%;
     }
     #experiences .row {
         align-items: baseline;
@@ -440,7 +440,7 @@ footer p {
         padding: 80px 0 40px 0;
     }
     .col3 {
-        width: 30%;
+        max-width: 30%;
     }
     /*typographie*/
 
@@ -476,7 +476,7 @@ footer p {
 @media screen and (min-width: 1200px) {
     /*general*/
     .col4 {
-        width: 23%;
+        max-width: 23%;
     }
     /*adjust menu desktop*/
     .menu-item {
