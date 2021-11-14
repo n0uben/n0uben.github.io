@@ -299,6 +299,9 @@ th {
 .card-content a {
     text-decoration: underline;
 }
+video {
+    max-width: 100%;
+}
 
 
 /********************************/
