@@ -8,7 +8,7 @@ Cette feuille de style utilise :
 - css grid (98% des users selon caniuse.com)
 - une structure comme un genre de bootstrap artisanal (modele section / lignes / colonnes)
 - des noms en anglais car j’en ai l'habitude (la faute de bootstrap principalement ^^)
-- des polices au format woff2 pour une meilleure compression
+- des polices au format woff et woff2 pour une meilleure compression
 */
 
 
@@ -456,7 +456,6 @@ footer p {
     /*menu desktop*/
     .header {
         flex-wrap: nowrap;
-        justify-content: space-between;
     }
     #menu-mobile-button {
         display: none;
@@ -478,5 +477,9 @@ footer p {
     /*general*/
     .col4 {
         width: 23%;
+    }
+    /*adjust menu desktop*/
+    .menu-item {
+        margin-right: 25px;
     }
 }
