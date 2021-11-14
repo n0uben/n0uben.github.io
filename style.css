@@ -8,7 +8,7 @@ Cette feuille de style utilise :
 - css grid (98% des users selon caniuse.com)
 - une structure comme un genre de bootstrap artisanal (modele section / lignes / colonnes)
 - des noms en anglais car j’en ai l'habitude (la faute de bootstrap principalement ^^)
-- des polices au format woff et woff2 pour une meilleure compression
+- des polices au format woff2 pour une meilleure compression (-300ms de chargement)
 */
 
 
@@ -119,6 +119,12 @@ a {
 }
 a:hover {
     color: var(--text-primary);
+}
+
+/*text highlighted*/
+
+.highlight {
+    background: var(--accent-color-secondary);
 }
 
 
@@ -439,7 +445,7 @@ footer p {
 @media screen and (min-width: 992px) {
     /*general*/
     .section {
-        padding: 80px 0 40px 0;
+        padding: 100px 0
     }
     .col3 {
         max-width: 30%;
@@ -477,11 +483,22 @@ footer p {
 }
 @media screen and (min-width: 1200px) {
     /*general*/
+
     .col4 {
         max-width: 23%;
     }
     /*adjust menu desktop*/
     .menu-item {
         margin-right: 25px;
+    }
+    /*specific*/
+    #home {
+        padding: 200px 0 50px 0;
+    }
+}
+@media screen and (min-width: 1600px) {
+    /*specific*/
+    #home {
+        padding: 250px 0 100px 0;
     }
 }
