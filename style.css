@@ -308,7 +308,7 @@ th {
     text-decoration: underline;
 }
 video {
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -381,6 +381,13 @@ video {
 #tatagermaine .card-header img {
     background: #354358;
     padding: 10px;
+}
+#competences .row {
+    justify-content: center;
+}
+#competences .col {
+    text-align: center;
+    margin: 0 10px;
 }
 #competences h3 {
     margin-block-end: 0;
