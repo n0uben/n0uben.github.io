@@ -523,16 +523,14 @@ footer p {
    
 }
 @media screen and (min-width: 1200px) {
-    /*general*/
-
-    .col4 {
-        max-width: 23%;
-    }
     /*adjust menu desktop*/
     .menu-item {
         margin-right: 25px;
     }
-
+    /*specific*/
+    #home {
+        padding: 200px 0 100px 0;
+    }
      /*col with page title and subtitle*/
      #home .row:first-child .col {
         max-width : 75%;
@@ -541,6 +539,6 @@ footer p {
 @media screen and (min-width: 1600px) {
     /*specific*/
     #home {
-        padding: 200px 0 100px 0;
+        padding: 250px 0 100px 0;
     }
 }
