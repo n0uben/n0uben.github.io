@@ -372,6 +372,9 @@ video {
     justify-content: center;
     box-shadow: 0px 2px 5px 0px var(--dropdown-shadow-black);
 }
+#home .button:hover {
+    box-shadow: none;
+}
 
 .button-icon {
     display: inline-block;
