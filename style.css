@@ -341,7 +341,7 @@ video {
 
 #home {
     background: var(--accent-color);
-    border: solid 20px var(--background-primary);
+    border: solid 20px var(--accent-color-secondary);
     padding: 100px 0 30px 0;
 }
 
