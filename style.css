@@ -49,8 +49,8 @@ Cette feuille de style utilise :
     --fonts-text: 'IBM Plex sans', sans-serif;
 
     --header-height: 80px;
-    --dropdown-shadow: rgb(56, 74, 229, 0.8);
-    --dropdown-shadow-black: rgb(0, 0, 0, 0.5);
+    --dropdown-shadow: rgba(56, 74, 229, 0.8);
+    --dropdown-shadow-black: rgba(0, 0, 0, 0.5);
 }
 ::selection {
     background: var(--accent-color-secondary);
@@ -325,7 +325,7 @@ video {
 
 
 /*alternate sections backgrounds*/
-#home, #experiences, #realisations {
+#experiences, #realisations {
     background: var(--background-primary);
 }
 #formation, #competences, #centres-interet {
@@ -335,12 +335,24 @@ video {
 /*home section*/
 
 #home {
-    padding: 150px 0 50px 0;
+    background: var(--accent-color);
+    border: solid 20px var(--background-primary);
+    margin-top: 90px;
+    padding: 50px 0 50px 0;
+}
+
+/*adjust text color for blue background*/
+#home h1, #home .page-subtitle, #home p {
+    color: var(--text-secondary);
+}
+#home h1 .highlight {
+    color: var(--accent-color);
 }
 
 #home .page-subtitle {
     padding-bottom: 0;
     margin-bottom: 0;
+    color: var(--text-secondary);
 }
 #header-title-row {
     padding-bottom: 0;
@@ -354,6 +366,7 @@ video {
 #home .button {
     display: flex;
     justify-content: center;
+    box-shadow: 0px 2px 5px 0px var(--dropdown-shadow-black);
 }
 
 .button-icon {
@@ -433,15 +446,6 @@ footer p {
         max-width: 45%;
     }
 
-    /* specifique */
-    #home .row {
-        justify-content: baseline;
-    }
-    /*col with page title and subtitle*/
-    #home .row:first-child .col {
-        max-width : 75%;
-    }
-
     /*cards*/
 
     #experiences .card-header img {
@@ -486,6 +490,7 @@ footer p {
     .menu-item {
         margin-right: 10px;
     }
+   
 }
 @media screen and (min-width: 1200px) {
     /*general*/
@@ -499,12 +504,16 @@ footer p {
     }
     /*specific*/
     #home {
-        padding: 200px 0 50px 0;
+        padding: 100px 0 20px 0;
+    }
+     /*col with page title and subtitle*/
+     #home .row:first-child .col {
+        max-width : 75%;
     }
 }
 @media screen and (min-width: 1600px) {
     /*specific*/
     #home {
-        padding: 250px 0 100px 0;
+        padding: 200px 0 100px 0;
     }
 }
