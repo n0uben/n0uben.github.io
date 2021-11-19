@@ -363,6 +363,12 @@ video {
 #home h1 .highlight {
     color: var(--accent-color);
 }
+#home hr {
+    width: 100px;
+    margin: 0;
+    height: 4px;
+    background: var(--background-primary);
+}
 
 #home .page-subtitle {
     padding-bottom: 0;
