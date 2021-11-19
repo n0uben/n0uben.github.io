@@ -294,6 +294,11 @@ th {
     /* border-radius: 0 40px 40px 40px; */
     max-width: 100%;
     box-shadow: 0px 5px 15px 2px var(--dropdown-shadow-black);
+    height: 100%;
+    background: var(--accent-color);
+}
+.card-header {
+    background: var(--background-primary);
 }
 .card-header img {
     display: block;
@@ -301,7 +306,6 @@ th {
 }
 .card-content {
     /* border: solid 4px var(--accent-color); */
-    background: var(--accent-color);
     padding: 40px 20px 10px 20px;
 }
 .card-content h3, .card-content p, .card-content a {
@@ -374,16 +378,7 @@ video {
 /*experiences section*/
 
 #experiences .card-header {
-    padding: 30px;
-}
-
-#experiences .card-header img {
-    max-width: 200px;
-}
-
-#tatagermaine .card-header img {
-    background: #354358;
-    padding: 10px;
+    background-color: var(--background-primary);
 }
 #competences .row {
     justify-content: center;
@@ -419,6 +414,11 @@ footer p {
     line-height: 2.3rem;
 }
 
+/* cards section flex */
+#experiences .row, #centres-interet .row {
+    align-items: stretch;
+}
+
 
 /**********************/
 /* mediaqueries */
@@ -441,14 +441,11 @@ footer p {
     #home .row:first-child .col {
         max-width : 75%;
     }
-    #experiences .row {
-        align-items: baseline;
-    }
 
     /*cards*/
 
     #experiences .card-header img {
-        width: 140px;
+        max-width: 100%;
     }
 }
 @media screen and (min-width: 992px) {
