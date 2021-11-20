@@ -540,6 +540,9 @@ footer p {
     .menu-item {
         margin-right: 10px;
     }
+    .menu-item a {
+        padding: 10px;
+    }
    
 }
 @media screen and (min-width: 1200px) {
