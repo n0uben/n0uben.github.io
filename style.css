@@ -163,7 +163,7 @@ button {
     width: 24px;
     margin-right: 7px;
 }   
-#icon-email {
+.icon-email {
     background: url(./images/icones/email.png) no-repeat;
 }
 #icon-github {
