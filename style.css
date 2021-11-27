@@ -269,6 +269,12 @@ button {
     margin: 0 auto;
     padding: 20px 0;
 }
+.row .col .row {
+    width: 100%;
+}
+.col .row .col {
+    padding: 5px 0px;
+}
 .col {
     /* background: var(--background-primary); */
     /* background: red; */
@@ -366,6 +372,7 @@ video {
 #home h1 .highlight {
     color: var(--accent-color);
 }
+/*style separator*/
 #home hr {
     width: 100px;
     margin: 0;
@@ -376,7 +383,6 @@ video {
 #home .page-subtitle {
     padding-bottom: 0;
     margin-bottom: 0;
-    color: var(--text-secondary);
 }
 #header-title-row {
     padding-bottom: 0;
