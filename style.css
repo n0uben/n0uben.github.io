@@ -195,8 +195,11 @@ button {
     box-shadow: 0 0px 6px 0px var(--dropdown-shadow-black);
 }
 #header-logo-container {
+    display: flex;
+    align-items: center;
     max-width: 50%;
     z-index: 2;
+    margin: 10px 0;
 }
 #header-logo {
     max-width: 100%;
