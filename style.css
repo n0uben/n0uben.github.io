@@ -142,14 +142,38 @@ button {
 }
 
 .button {
+    display: flex;
+    justify-content: center;
     background: var(--accent-color);
     color: var(--text-secondary);
     padding: 10px 20px;
     border-radius: 15px;
+    margin-right: 10px;
+    box-shadow: 0px 2px 5px 0px var(--dropdown-shadow-black);
 }
 .button:hover {
     background: var(--background-secondary);
     color: var(--accent-color-secondary);
+    box-shadow: none;
+}
+
+.button-icon {
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    margin-right: 7px;
+}   
+#icon-email {
+    background: url(./images/icones/email.png) no-repeat;
+}
+#icon-github {
+    background: url(./images/icones/github.png) no-repeat;
+}
+#icon-linkedin {
+    background: url(./images/icones/linkedin-logo.png) no-repeat;
+}
+#icon-codepen {
+    background: url(./images/icones/codepen.png) no-repeat;
 }
 
 /******************************/
@@ -393,30 +417,6 @@ video {
     padding-top: 0;
     margin-top: 0;
 }
-#home .button {
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 2px 5px 0px var(--dropdown-shadow-black);
-}
-#home .button:hover {
-    box-shadow: none;
-}
-
-.button-icon {
-    display: inline-block;
-    height: 24px;
-    width: 24px;
-    margin-right: 7px;
-}   
-#icon-email {
-    background: url(./images/icones/email.png) no-repeat;
-}
-#icon-github {
-    background: url(./images/icones/github.png) no-repeat;
-}
-#icon-linkedin {
-    background: url(./images/icones/linkedin-logo.png) no-repeat;
-}
 
 /*formation section*/
 
@@ -443,6 +443,24 @@ video {
 }
 #realisations .card-header img, #centres-interet .card-header img{
     object-fit: cover;
+}
+
+/*contact*/
+
+.call-to-action {
+    padding-bottom: 0px !important;
+}
+
+.call-to-action .row:first-child {
+    max-width: 800px;
+    background: #2639E3;
+    box-shadow: 0 0 5px 0 var(--dropdown-shadow-black);
+}
+.call-to-action .col {
+    padding: 40px;
+}
+.call-to-action p, .call-to-action h2 {
+    color: var(--text-secondary);
 }
 
 /*footer*/
@@ -514,7 +532,7 @@ footer p {
 @media screen and (min-width: 992px) {
     /*general*/
     .section {
-        padding: 100px 0
+        padding: 100px 0;
     }
     .col3 {
         max-width: 30%;
