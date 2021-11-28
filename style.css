@@ -446,6 +446,7 @@ video {
 }
 #realisations .card-header img, #centres-interet .card-header img{
     object-fit: cover;
+    min-width: 100%;
 }
 
 /*contact*/
