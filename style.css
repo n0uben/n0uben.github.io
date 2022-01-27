@@ -191,7 +191,7 @@ button {
     right:0;
     /* background: var(--background-primary); */
     background: white;
-    border-bottom: solid 4px var(--accent-color);
+    /*border-bottom: solid 4px var(--accent-color);*/
     box-shadow: 0 0px 6px 0px var(--dropdown-shadow-black);
 }
 #header-logo-container {
@@ -388,7 +388,7 @@ video {
 
 #home {
     background: var(--accent-color);
-    border: solid 15px var(--background-primary);
+    /*border: solid 15px var(--background-primary);*/
     padding: 100px 0 30px 0;
 }
 
