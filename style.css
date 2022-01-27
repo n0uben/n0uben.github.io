@@ -189,9 +189,7 @@ button {
     top: 0;
     left:0;
     right:0;
-    /* background: var(--background-primary); */
     background: white;
-    /*border-bottom: solid 4px var(--accent-color);*/
     box-shadow: 0 0px 6px 0px var(--dropdown-shadow-black);
 }
 #header-logo-container {
@@ -290,8 +288,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    /* background: var(--background-primary); */
-    /* background: green; */
     width: 80%;
     margin: 0 auto;
     padding: 20px 0;
@@ -303,8 +299,6 @@ button {
     padding: 5px 0px;
 }
 .col {
-    /* background: var(--background-primary); */
-    /* background: red; */
     padding: 20px 5px;
 }
 
@@ -339,7 +333,6 @@ th {
 
 /*card design (article tags)*/
 .card {
-    /* border-radius: 0 40px 40px 40px; */
     max-width: 100%;
     height: 100%;
     background: var(--accent-color);
@@ -357,7 +350,6 @@ th {
     margin: 0 auto;
 }
 .card-content {
-    /* border: solid 4px var(--accent-color); */
     padding: 40px 20px 10px 20px;
 }
 .card-content h3, .card-content p, .card-content a {
@@ -388,7 +380,6 @@ video {
 
 #home {
     background: var(--accent-color);
-    /*border: solid 15px var(--background-primary);*/
     padding: 100px 0 30px 0;
 }
 
