@@ -6,7 +6,7 @@ Demo: https://www.nouben.fr
 
 Performance :
 - 100/100 Google pagespeed (mobile & desktop)
-- 98% GTMetrix
+- 100% GTMetrix
 
 100% valide W3C.
 
