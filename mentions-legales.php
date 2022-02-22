@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
-        <title>Benjamin Noureux - Développeur Back-end #RechercheAlternance2022</title>
-        <!-- custom stylesheet -->
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="style-min.css">
-    </head>
-<body>
-    <div class="header">
-        <figure id="header-logo-container">
-            <a href="index.html"><img id="header-logo" src="./images/logo-benjamin-noureux-min.png" alt="logo benjamin noureux"></a>
-        </figure>
-        <!-- button hidden on desktop -->
-        <button id="menu-mobile-button"><span class="menu-icone"></span>MENU</button>
-        <!-- menu hidden on mobile -->
-        <nav id="header-menu-nav">
-            <ul id="header-menu" class="menu">
-                <li class="menu-item"><a href="index.html#home">Retour à l’accueil</a></li>
-            </ul>
-        </nav>
-    </div>
+<?php include("./header.php") ?>
+
     <main id="page-mentions">
         <div class="section">
             <div class="row">
@@ -69,17 +45,6 @@
         </div>
 
     </main>
-    <footer>
-        <div class="row">
-            <div class="col">
-                <p><a href="#">↑ Retour en haut de page</a></p>
-                <hr>
-                <p>Tous droits réservés © 2021 - Textes et Design par Benjamin Noureux</p>
-                <p><em><a href="./mentions-legales.html">Mentions légales</a></em></p>
-            </div>
-        </div>
-    </footer>
-    <script src="mon_super_fichier_js.js"></script>
+  
 
-</body>
-</html>
+<?php include("./footer.php") ?>

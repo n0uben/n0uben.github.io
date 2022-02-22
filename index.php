@@ -1,35 +1,6 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Benjamin Noureux - Développeur Back-end #RechercheAlternance2022</title>
-        <!-- ma feuille de style -->
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="style-min.css">
-    </head>
-<body>
-    <div class="header">
-        <figure id="header-logo-container">
-            <a href="index.html"><img id="header-logo" src="./images/logo-benjamin-noureux-min.png" alt="logo benjamin noureux"></a>
-        </figure>
-        
-        <button id="menu-mobile-button"><span class="menu-icone"></span>MENU</button>
-        <nav id="header-menu-nav">
-            <ul id="header-menu" class="menu">
-                <li class="menu-item"><a href="#home">A propos</a></li>
-                <li class="menu-item"><a href="#formation">Formation</a></li>
-                <li class="menu-item"><a href="#experiences">Expériences</a></li>
-                <li class="menu-item"><a href="#competences">Compétences</a></li>
-                <li class="menu-item"><a href="#realisations">Réalisations</a></li>
-                <li class="menu-item"><a href="#centres-interet">Loisirs</a></li>
-                <li class="menu-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    
+  
+    <?php include("./header.php") ?>
+
     <main>
         <header class="section" id="home">
             <div class="row" id="header-title-row">
@@ -383,17 +354,4 @@
         </div>
     </main>
     
-    <footer>
-        <div class="row">
-            <div class="col">
-                <p><a href="#">↑ Retour en haut de page</a></p>
-                <hr>
-                <p>Tous droits réservés © 2021 - Textes et Design par Benjamin Noureux</p>
-                <p><em><a href="./mentions-legales.html">Mentions légales</a></em></p>
-            </div>
-        </div>
-    </footer>
-    <script src="mon_super_fichier_js.js"></script>
-    
-</body>
-</html>
+    <?php include("./footer.php"); ?>
