@@ -275,7 +275,7 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
-    width: 80%;
+    width: 95%;
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -516,6 +516,9 @@ footer p {
     /*general*/
     .section {
         padding: 100px 0;
+    }
+    .row {
+        width: 80%;
     }
     .col3 {
         max-width: 30%;
