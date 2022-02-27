@@ -297,14 +297,12 @@ img {
 
 /* tables design */
 
-.table-responsive {
-    max-width: 260px;
-    overflow-x: auto;
-}
-
 table {
     width :100%;
     border-collapse: collapse;
+}
+tr:nth-child(2n) {
+    border-bottom: solid 1px var(--background-secondary-ultralight);
 }
 table tbody {
     border-top: solid 2px var(--background-secondary);
@@ -313,6 +311,9 @@ td, th {
     vertical-align: top;
     padding: 0.5rem 0.5rem;
     text-align: left;
+}
+td.rowspan {
+    vertical-align: middle;
 }
 th {
     font-weight: 600;
