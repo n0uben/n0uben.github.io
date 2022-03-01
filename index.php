@@ -6,6 +6,8 @@
         
             $page = $_SERVER['REQUEST_URI'];
 
+            echo $page;
+
             switch ($page) {
 
                 case '/n0uben.github.io/mentions-legales.php':
