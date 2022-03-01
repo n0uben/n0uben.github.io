@@ -13,8 +13,8 @@
 
 <div class="header">
     <figure id="header-logo-container">
-        <a href="index.php"><img id="header-logo" src="./images/logo-benjamin-noureux-min.png" alt="logo benjamin noureux"></a>
+        <a href="/"><img id="header-logo" src="./images/logo-benjamin-noureux-min.png" alt="logo benjamin noureux"></a>
     </figure>
     
-    <?php include("./menu.php") ?>
+    <?php include("menu.php") ?>
 </div>
