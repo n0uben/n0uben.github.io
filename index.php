@@ -6,7 +6,7 @@
         
             $page = $_SERVER['REQUEST_URI'];
 
-            if ($page == '/n0uben.github.io/mentions-legales.php') {
+            if (str_ends_with($page, 'mentions.legales.php')) {
                 include('mentions-legales.php');
             } else {
                 include('home.php');
