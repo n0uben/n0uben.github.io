@@ -7,7 +7,7 @@
 
                     <h1>Mentions Légales</h1>
                     <p>
-                        <?php echo $_SERVER['servername']; ?>
+                        <?php echo $_SERVER['SERVER_NAME']; ?>
                         Retrouvez les mentions légales et les crédits images pour le site nouben.fr
                     </p>
 
