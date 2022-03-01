@@ -1,33 +1,35 @@
   
-    <?php include("./header.php") ?>
+    <?php include("./templates/header.php") ?>
 
     <main>
         <?php 
-        
-            $page = $_SERVER['REQUEST_URI'];
 
-            if (str_ends_with($page, 'mentions.legales.php')) {
-                include('mentions-legales.php');
-            } else {
-                include('home.php');
+            $page = $_SERVER["REQUEST_URI"];
+
+            if (!$page) {
+                include(".templates/404.php");
             }
-            // switch ($page) {
 
-            //     case '/n0uben.github.io/mentions-legales.php':
-            //         include('./mentions-legales.php');
-            //         break;
-                
-            //     case '/n0uben.github.io/index.php':
-            //         include('./home.php');
-            //         break;
-                
-            //     default:
-            //         include('./home.php');
-            //         break;
-            // }
-             
+            switch ($page) {
 
+                // Accueil
+                case '/':
+                    include('./templates/home.php');
+                    break;
+                case '/index.php':
+                    include('./templates/home.php');
+                    break;
+
+                // Mentions legales
+                case '/mentions-legales':
+                    include('./templates/mentions-legales.php');
+                    break;
+                
+                default:
+                    include("./templates/404.php");
+                    break;
+            }
         ?>
     </main>
     
-    <?php include("./footer.php"); ?>
+    <?php include("./templates/footer.php"); ?>
