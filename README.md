@@ -1,5 +1,7 @@
 # Portfolio
 
-Portfolio Benjamin Noureux, réalisé en vanilla HTML5 / CSS3 / JS.
+Portfolio Benjamin Noureux, réalisé en vanilla HTML5 / CSS3 / PHP.
 
-Demo: https://n0uben.github.io
+NOTA BENE : Work in progress (aplha version)
+
+Demo: http://tests.nouben.fr
