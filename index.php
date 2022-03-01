@@ -14,6 +14,10 @@
                     include('./mentions-legales.php');
                     break;
                 
+                case '/n0uben.github.io/index.php':
+                    include('./home.php');
+                    break;
+                
                 default:
                     include('./home.php');
                     break;
