@@ -16,5 +16,5 @@
         <a href="/"><img id="header-logo" src="./images/logo-benjamin-noureux-min.png" alt="logo benjamin noureux"></a>
     </figure>
     
-    <?php include("menu.php") ?>
+    <?php include("menu.php"); ?>
 </div>

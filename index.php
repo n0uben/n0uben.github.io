@@ -1,5 +1,5 @@
   
-    <?php include("./templates/header.php") ?>
+    <?php include(realpath("./templates/header.php")) ?>
 
     <main>
         <?php 
@@ -7,26 +7,26 @@
             $page = $_SERVER["REQUEST_URI"];
 
             if (!$page) {
-                include("../templates/404.php");
+                include(realpath("../templates/404.php"));
             }
 
             switch ($page) {
 
                 // Accueil
                 case '/':
-                    include('./templates/home.php');
+                    include(realpath("./templates/home.php"));
                     break;
                 case '/index.php':
-                    include('./templates/home.php');
+                    include(realpath("./templates/home.php"));
                     break;
 
                 // Mentions legales
                 case '/mentions-legales':
-                    include('./templates/mentions-legales.php');
+                    include(realpath("./templates/mentions-legales.php"));
                     break;
                 
                 default:
-                    include("./templates/404.php");
+                    include(realpath("./templates/404.php"));
                     break;
             }
         ?>
