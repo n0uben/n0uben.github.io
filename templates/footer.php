@@ -8,7 +8,7 @@
         </div>
     </div>
 </footer>
-<script src="mon_super_fichier_js.js"></script>
+<script src="./js/menuMobile.js"></script>
 
 </body>
 </html>

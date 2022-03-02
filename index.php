@@ -22,7 +22,7 @@
 
                 // Mentions legales
                 case '/mentions-legales':
-                    include(realpath("./templates/mentions-legales.php"));
+                    include("mentions-legales.php");
                     break;
                 
                 default:
@@ -32,4 +32,4 @@
         ?>
     </main>
     
-    <?php include("./templates/footer.php"); ?>
+    <?php include(realpath("./templates/footer.php")); ?>

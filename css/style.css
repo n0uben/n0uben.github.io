@@ -1,21 +1,21 @@
 @font-face {
     font-family: 'IBM Plex sans';
-    src: url(./fonts/ibmplexsans-light-webfont.woff2) format("woff2");
+    src: url(../fonts/ibmplexsans-light-webfont.woff2) format("woff2");
     font-weight: 300;
 }
 @font-face {
     font-family: 'IBM Plex sans';
-    src: url(./fonts/ibmplexsans-bold-webfont.woff2) format("woff2");
+    src: url(../fonts/ibmplexsans-bold-webfont.woff2) format("woff2");
     font-weight: 700;
 }
 @font-face {
     font-family: 'IBM Plex sans';
-    src: url(./fonts/ibmplexsans-lightitalic-webfont.woff2) format("woff2");
+    src: url(../fonts/ibmplexsans-lightitalic-webfont.woff2) format("woff2");
     font-style: italic;
 }
 @font-face {
     font-family: 'Space Grotesk';
-    src: url(./fonts/SpaceGrotesk-Bold.woff2) format("woff2");
+    src: url(../fonts/SpaceGrotesk-Bold.woff2) format("woff2");
     font-weight: 700;
 }
 
@@ -150,16 +150,16 @@ button {
     margin-right: 7px;
 }   
 .icon-email {
-    background: url(./images/icones/email.png) no-repeat;
+    background: url(../images/icones/email.png) no-repeat;
 }
 #icon-github {
-    background: url(./images/icones/github.png) no-repeat;
+    background: url(../images/icones/github.png) no-repeat;
 }
 #icon-linkedin {
-    background: url(./images/icones/linkedin-logo.png) no-repeat;
+    background: url(../images/icones/linkedin-logo.png) no-repeat;
 }
 #icon-codepen {
-    background: url(./images/icones/codepen.png) no-repeat;
+    background: url(../images/icones/codepen.png) no-repeat;
 }
 
 /******************************/
@@ -234,13 +234,13 @@ button {
     display: inline-block;
     height: 32px;
     width: 32px;
-    background: url('./images/icones/menu-32px.png') no-repeat;
+    background: url('../images/icones/menu-32px.png') no-repeat;
     margin-bottom: 5px;
 }
 .menu-close {
     height:26px;
     width: 26px;
-    background: url('./images/icones/close.png') no-repeat;
+    background: url('../images/icones/close.png') no-repeat;
     background-size: contain;
 }
 #header-menu-nav {

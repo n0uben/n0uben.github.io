@@ -84,7 +84,7 @@
         <div class="col col2 col3">
             <div class="card">
                 <div class="card-header">
-                    <img src="./images/logos/logo-benjamin-noureux-consultant-wordpress.png" loading="lazy" height="150" alt="Logo Benjamin Noureux">
+                    <img src="../images/logos/logo-benjamin-noureux-consultant-wordpress.png" loading="lazy" height="150" alt="Logo Benjamin Noureux">
                 </div>
                 <div class="card-content">
                     <p><em>2020-2021</em></p>
@@ -99,7 +99,7 @@
         <div class="col col2 col3">
             <div id ="tatagermaine" class="card">
                 <div class="card-header">
-                    <img src="./images/logos/logo-tata-germaine.png" loading="lazy" height="150" alt="logo tata germaine">
+                    <img src="../images/logos/logo-tata-germaine.png" loading="lazy" height="150" alt="logo tata germaine">
                 </div>
                 <div class="card-content">
 
@@ -117,7 +117,7 @@
         <div class="col col2 col3">
             <div class="card">
                 <div class="card-header">
-                    <img src="./images/logos/logo-odandb-limoges.png" loading="lazy" height="150" alt="logo odandb">
+                    <img src="../images/logos/logo-odandb-limoges.png" loading="lazy" height="150" alt="logo odandb">
                 </div>
                 <div class="card-content">
                     <p><em>2013-2015</em></p>
@@ -154,7 +154,7 @@
     </div>
     <div class="row">
         <div class="col col2 col3">
-            <img src="./images/icones/engineering.png" height="64" alt="icone langages programmation">
+            <img src="../images/icones/engineering.png" height="64" alt="icone langages programmation">
             <h3>Langages</h3>
             <p>
                 Python, C/C++, Java, PHP, Javascript<br>
@@ -162,22 +162,22 @@
             </p>
         </div>
         <div class="col col2 col3">
-            <img src="./images/icones/programming.png" height="64" alt="langages web">
+            <img src="../images/icones/programming.png" height="64" alt="langages web">
             <h3>Web</h3>
             <p>HTML5/CSS3, Flexbox/Grid, Scss</p>
         </div>
         <div class="col col2 col3">
-            <img src="./images/icones/project-management.png" height="64" alt="gestion projet">
+            <img src="../images/icones/project-management.png" height="64" alt="gestion projet">
             <h3>Outils</h3>
             <p>GIT, Github, Linux (Fedora, ubuntu), Trello, Asana, Lastpass/Dashlane</p>
         </div>
         <div class="col col2 col3">
-            <img src="./images/icones/adobe.png" height="64" alt="logo suite adobe">
+            <img src="../images/icones/adobe.png" height="64" alt="logo suite adobe">
             <h3>Suite Adobe</h3>
             <p>Adobe XD, Illustrator, Indesign, Photoshop & Lightroom </p>
         </div>
         <div class="col col2">
-            <img src="./images/icones/communication.png" height="64" alt="icone langages programmation">
+            <img src="../images/icones/communication.png" height="64" alt="icone langages programmation">
             <h3>Savoir-être</h3>
             <p>
                 Créatif, Curieux, Autonome, Bonne capacité d’adaptation, Esprit d’équipe, Bonne Communication écrite et orale
