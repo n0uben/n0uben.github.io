@@ -1,7 +1,3 @@
-/*Pour le menu mobile,
-je me suis permis d’utiliser quelques lignes de javascript 
-langage que j’ai eu l’occasion de pratiquer. */
-
 // on récupère le bouton mobile & les liens du menu
 let toggleMenu = document.querySelectorAll('#menu-mobile-button, .menu-item a');
 //on isole le bouton menu mobile pour agir dessus indépendamment
