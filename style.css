@@ -24,7 +24,8 @@
     --text-secondary: #fff;
     
     --accent-color: #2639E3;
-    --accent-color-secondary: #35FF69;
+    /* --accent-color-secondary: #35FF69; */
+    --accent-color-secondary: #F9A620;
 
     --background-primary:#fff;
     --background-secondary: rgb(31, 31, 31);
