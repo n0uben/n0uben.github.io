@@ -1,35 +1,25 @@
-  
-    <?php include(realpath("./templates/header.php")) ?>
+<?php include(realpath("./templates/header.php")) ?>
 
-    <main>
-        <?php 
+<main>
+    <?php
 
-            $page = $_SERVER["REQUEST_URI"];
+    $page = $_GET["p"];
 
-            if (!$page) {
-                include(realpath("../templates/404.php"));
-            }
+    if (!isset($page)) {
+        require './templates/home.php';
+    } else {
+        switch ($page) {
+            case 'home':
+                require './templates/home.php';
+                break;
+            case 'legal':
+                require './templates/mentions-legales.php';
+                break;
+            default:
+                require './templates/404.php';
+        }
+    }
+    ?>
+</main>
 
-            switch ($page) {
-
-                // Accueil
-                case '/':
-                    include(realpath("./templates/home.php"));
-                    break;
-                case '/index.php':
-                    include(realpath("./templates/home.php"));
-                    break;
-
-                // Mentions legales
-                case '/mentions-legales':
-                    include("mentions-legales.php");
-                    break;
-                
-                default:
-                    include(realpath("./templates/404.php"));
-                    break;
-            }
-        ?>
-    </main>
-    
-    <?php include(realpath("./templates/footer.php")); ?>
+<?php include(realpath("./templates/footer.php")); ?>

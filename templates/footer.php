@@ -4,7 +4,7 @@
             <p><a href="#">↑ Retour en haut de page</a></p>
             <hr>
             <p>Tous droits réservés © 2021 - Textes et Design par Benjamin Noureux</p>
-            <p><em><a href="/mentions-legales">Mentions légales</a></em></p>
+            <p><em><a href="/n0uben.github.io/index.php?p=legal">Mentions légales</a></em></p>
         </div>
     </div>
 </footer>
